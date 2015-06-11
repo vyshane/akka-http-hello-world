@@ -2,7 +2,7 @@
 
 This is a sample [Akka HTTP](http://doc.akka.io/docs/akka-stream-and-http-experimental/1.0-M2/scala/http/) application packaged up in a [Docker](https://www.docker.com) container. You can use this project as a starting point for your Akka HTTP projects. The project includes the necessary configuration files for dockerizing the app.
 
-## Running the Application
+## Building and Running the Application
 
 Build the Akka application:
 
