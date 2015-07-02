@@ -6,22 +6,24 @@ import com.typesafe.config.{ConfigFactory, Config}
 import akka.http.scaladsl.server.Directives._
 
 
-object HelloWorldService extends App {
+object HelloWorldService {
   implicit val system = ActorSystem()
   implicit val executor = system.dispatcher
   implicit val materializer = ActorMaterializer()
 
-  val config = ConfigFactory.load()
-  val logger = Logging(system, getClass)
-
-  val routes =
-    get {
-      pathSingleSlash {
-        complete {
-          "Hello, World!"
+  def main(args: Array[String]): Unit = {
+    val config = ConfigFactory.load()
+    val logger = Logging(system, getClass)
+  
+    val routes =
+      get {
+        pathSingleSlash {
+          complete {
+            "Hello, World!"
+          }
         }
       }
-    }
-
-  Http().bindAndHandle(routes, config.getString("http.address"), config.getInt("http.port"))
+  
+    Http().bindAndHandle(routes, config.getString("http.address"), config.getInt("http.port"))
+  }
 }
