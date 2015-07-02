@@ -1,6 +1,6 @@
 FROM hseeberger/scala-sbt
 MAINTAINER Vy-Shane Xie <shane@node.mu>
-ENV REFRESHED_AT 2015-06-08
+ENV REFRESHED_AT 2015-07-02
 
 ADD . /root
 WORKDIR /root

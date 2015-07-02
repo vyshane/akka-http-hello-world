@@ -26,6 +26,6 @@ Hello, World!
 ## Useful Links
 
 * [Akka HTTP - The What, Why and How](https://www.youtube.com/watch?v=y_slPbktLr0) (Video)
-* [Akka HTTP documentation](http://doc.akka.io/docs/akka-stream-and-http-experimental/1.0-M2/scala/http/)
+* [Akka HTTP documentation](http://doc.akka.io/docs/akka-stream-and-http-experimental/1.0-RC4/scala/http/)
 * [Akka HTTP Microservice Example](https://www.typesafe.com/activator/template/akka-http-microservice) (Tutorial with code)
 * [Docker documentation](https://docs.docker.com/)
