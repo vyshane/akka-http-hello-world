@@ -8,9 +8,9 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 assemblyJarName in assembly := "akka-http-hello-world.jar"
 
 libraryDependencies ++= {
-  val akkaStreamVersion = "1.0-RC4"
+  val akkaStreamVersion = "1.0"
   Seq(
-    "com.typesafe.akka" %% "akka-actor" % "2.3.11",
+    "com.typesafe.akka" %% "akka-actor" % "2.3.12",
     "com.typesafe.akka" % "akka-stream-experimental_2.11" % akkaStreamVersion,
     "com.typesafe.akka" % "akka-http-core-experimental_2.11" % akkaStreamVersion,
     "com.typesafe.akka" % "akka-http-experimental_2.11" % akkaStreamVersion
